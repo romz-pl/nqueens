@@ -11,7 +11,6 @@ def run_ampl(nqueens):
     ampl.param["n"] = nqueens
     output = ampl.get_output("solve;")
     solution = ampl.get_data("Row").to_dict()
-    st.write(solution)
     return output, solution
 
 
