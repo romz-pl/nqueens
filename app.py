@@ -42,8 +42,8 @@ def provide_input_parameters():
     return nqueens
 
 
-def show_highs_output(output):
-    st.subheader("HiGHS output", divider="blue")
+def show_highs_output(output, n):
+    st.subheader(f"HiGHS output for {n}", divider="blue")
     st.code(output)
 
 
@@ -54,7 +54,7 @@ def main():
     n = provide_input_parameters()
     output, solution = run_ampl(n)
     show_solution(n, solution)
-    show_highs_output(output)
+    show_highs_output(output, n)
 
 
 
