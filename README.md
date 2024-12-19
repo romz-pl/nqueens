@@ -1,5 +1,5 @@
 # N-Queens example with AMPL and HiGHS with amplpy
 
-## This code is based on nqueens repo https://github.com/fdabrandao/streamlit-nqueens
+## The following repo is the basis of this code: https://github.com/fdabrandao/streamlit-nqueens
 
 
